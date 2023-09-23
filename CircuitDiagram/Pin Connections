@@ -14,7 +14,7 @@ pin12 SENSEP -    Connected to Rsensep (which is connected to Pack negative term
 pin13 ALERT  -    Connected to GPIO_ALERT 
 pin14 VIOUT  -    Connected to ADC3_CURRENT 
 pin15 VCOUT  -    Connected to Cvcout and ADC2_VOLTAGE
-pin16 VTB    -     Connected to Rth(which is connected to ADC_TEMP
+pin16 VTB    -    Connected to Rth(which is connected to ADC_TEMP
 pin17 VREF   -    Connected to Cref and ADC_REF
 pin18 SDA    -    Connected to output SDA
 pin19 SCL    -    Connected to output SCL 
