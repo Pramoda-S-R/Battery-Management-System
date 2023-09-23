@@ -1,4 +1,4 @@
-#include "DHT.h"
+#include "DHT.h" //install DHT Sensor Library by Adafruit
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN,DHTTYPE);
