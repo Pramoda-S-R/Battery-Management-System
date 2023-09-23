@@ -1,6 +1,12 @@
 pin1 VCTL       -    3.3V Regulator Control voltage 
 pin2 BAT        -    Supply Voltage tied to most positive cells 
-pin3,4,5,6,7,8,9 VC6,VC5,VC4,VC3,VC2,VC1,VC0 - Measure the Voltage between the 2 terminals of the battery 
+pin3 VC6        -    Measure the Voltage between the 2 terminals of the battery 
+pin4 VC6        -    Measure the Voltage between the 2 terminals of the battery
+pin5 VC6        -    Measure the Voltage between the 2 terminals of the battery
+pin6 VC6        -    Measure the Voltage between the 2 terminals of the battery
+pin7 VC6        -    Measure the Voltage between the 2 terminals of the battery
+pin8 VC6        -    Measure the Voltage between the 2 terminals of the battery
+pin9 VC6        -    Measure the Voltage between the 2 terminals of the battery
 pin10 VSS       -    Ground 
 pin11 SENSEN    -    Negative current senor 
 pin12 SENSEP    -    Positive current sensor 
