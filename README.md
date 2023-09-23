@@ -8,15 +8,15 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 4. Blynk Account
 5. 3 - Li-Ion(3.7V,200 mAh) Batteries
 6. 5V Power Supply
-7. Resistors -  
-  - 100Ω   - 5
-  - 1kΩ    - 3
-  - 4.7kΩ  - 2
-8. Capacitors -
-  - 1µF    - 6
-  - 1000pF - 2
-  - 10µF   - 1
-  - 0.1µF  - 1
+7. Resistors
+     - 100Ω   - 5
+     - 1kΩ    - 3
+     - 4.7kΩ  - 2
+8. Capacitors
+     - 1µF    - 6
+     - 1000pF - 2
+     - 10µF   - 1
+     - 0.1µF  - 1
 
 ## Links
 - [BQ76925](https://www.ti.com/product/BQ76925)
