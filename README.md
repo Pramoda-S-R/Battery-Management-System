@@ -1,7 +1,7 @@
 # BMS
 The repository includes - Circuit diagrams, Code for the hardware used (Arduino and ESP8266 module), Features and Specifications.
 
-# Requirements
+## Requirements
 1. BQ76925 IC
 2. Arduino UNO R3
 3. NODEMCU ESP8266
@@ -11,14 +11,14 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 7. Resistors - (values placeholder)
 8. Capacitors - (values placeholder)
 
-# Links
-[BQ76925](https://www.ti.com/product/BQ76925)
-[Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
-[ESp8266](https://www.make-it.ca/nodemcu-details-specifications/)
-[Blynk](https://blynk.io/)
+## Links
+- [BQ76925](https://www.ti.com/product/BQ76925)
+- [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
+- [ESp8266](https://www.make-it.ca/nodemcu-details-specifications/)
+- [Blynk](https://blynk.io/)
 
-# ESP8266.h
-'''
+## ESP8266.h
+```
 WiFi.reset			// Hardware or software reset for HSP8266 module.
 WiFi.begin			// Begin WIFI connection and transmission.
 WiFi.end			// End WIFI connection.
@@ -37,5 +37,4 @@ WiFi.receive		// Start listening, and then stores the received data to the buffe
 WiFi.listen			// Starts the listening, and returns data length necessary for receiving.
 WiFi.available		// Get the number of bytes available for reading from ESP8266. 
 WiFi.read			// Return a character that was received from ESP8266.
-'''
-
+```
