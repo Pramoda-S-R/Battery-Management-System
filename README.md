@@ -23,3 +23,6 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 - [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
 - [ESp8266](https://www.make-it.ca/nodemcu-details-specifications/)
 - [Blynk](https://blynk.io/)
+
+## Circuit Diagram
+ - [You can find the circuit here.](CircuitDiagram/CIRCUIT_DIAGRAM.png)
