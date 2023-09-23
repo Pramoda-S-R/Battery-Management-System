@@ -5,9 +5,14 @@
 
 SoftwareSerial s(D6, D5);
 
+//declare and initialize sensor values
 int sensor_value1 = 0; // Variable to store Sensor Output
 int sensor_value2 = 0; // Variable to store Sensor Output
 int sensor_value3 = 0; // Variable to store Sensor Output
+
+//declare and initialize safe values
+safeCurrent = 0;  //Update to actual safe value
+safeVoltage = 0;  //Update to actual safe value
 
 #define BLYNK_TEMPLATE_ID   "TMPL30Jm3O2MQ"
 #define BLYNK_TEMPLATE_NAME "Quickstart Template"
@@ -48,7 +53,7 @@ void loop() {
   Serial.println(sensor_value3);
 
   // Check if values exceed safe limits
-  if (sensor_value1 > safeCurrent || sensor_value2 > safeVoltage || sensor_value3 >50)  //safevalues needs to be added 
+  if (sensor_value1 > safeCurrent || sensor_value2 > safeVoltage || sensor_value3 >50)  //safevalues added but not set to actual values yet
   {
     if (!alertSent) {
       Blynk.notify("Alert: Voltage, Current, or Temperature exceeds safe limits!");
