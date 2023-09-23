@@ -48,7 +48,7 @@ void loop() {
   Serial.println(sensor_value3);
 
   // Check if values exceed safe limits
-  if (sensor_value1 > safeCurrent || sensor_value2 > safeVoltage || sensor_value3 > safeTemp)  //safevalues needs to be added 
+  if (sensor_value1 > safeCurrent || sensor_value2 > safeVoltage || sensor_value3 >50)  //safevalues needs to be added 
   {
     if (!alertSent) {
       Blynk.notify("Alert: Voltage, Current, or Temperature exceeds safe limits!");
