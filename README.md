@@ -1,5 +1,16 @@
 # Battery Management System using BQ76925
 The repository includes - Circuit diagrams, Code for the hardware used (Arduino and ESP8266 module), Features and Specifications.
+Battery Management System (BMS) is designed to ensure the optimal performance and safety of your energy storage solutions. This system combines precision monitoring with seamless IoT integration, providing real-time insights into crucial battery parameters.
+ - ### Key Features
+   - Voltage, Current, and Temperature Monitoring
+   - Fail-Safe Alerts
+   - IoT Integration
+   - User-Friendly Interface
+   - Scalable Desig
+ - ### Applications
+   - Electric Vehicles
+   - Industrial Power Backup
+   - Off-Grid Solutions
 
 ## Requirements
 1. BQ76925 IC
@@ -18,11 +29,28 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
      - 10µF   - 1
      - 0.1µF  - 1
 
+## Circuit Diagram
+ - [You can find the circuit here.](CircuitDiagram/CIRCUIT_DIAGRAM.png)
+
+## Instructions
+ - Connect the circuit as shown in the diagram.
+ - Congratulate yourself for successfully making all the connections.
+ - Make changes to [the ESP8266 Code](ESP8266/Blynk_IoT_clouding.ino) based on your Wifi credentials and Blynk profile.
+ - Upload Arduino and Esp8266 code.
+ - Wait for the connection.
+ - Monitor and test your own BMS project.
+
+## Dependencies
+ - ESP8266WiFi.h
+ - BlynkSimpleEsp8266.h
+ - SoftwareSerial.h
+ - ArduinoJson.h
+
 ## Links
 - [BQ76925](https://www.ti.com/product/BQ76925)
 - [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
 - [ESp8266](https://www.make-it.ca/nodemcu-details-specifications/)
 - [Blynk](https://blynk.io/)
 
-## Circuit Diagram
- - [You can find the circuit here.](CircuitDiagram/CIRCUIT_DIAGRAM.png)
+## License
+ - Coming Soon (hopefully)
