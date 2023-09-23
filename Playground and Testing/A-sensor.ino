@@ -13,8 +13,8 @@ void setup() {
 
 void loop() {
 delay(3000);
-float h = dht.readHumidity();
-float t = dht.readTemperature();
+float h = dht.readHumidity(); // we read Humidity of the battery using inbuilt function dht.readHumidity
+float t = dht.readTemperature(); //we read external temperature of the battery using inbuilt function dht.readHumidity
 float k = t + 273.16 ;
 Serial.print("\n Humidity\n");
 Serial.print(h);
