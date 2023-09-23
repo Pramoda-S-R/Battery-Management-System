@@ -7,8 +7,8 @@ SoftwareSerial s(5,6);
 #define ALERT_PIN 2
 int a,b,c,d,e,f ;
 
-StaticJsonBuffer<1000> jsonBuffer;
-JsonObject& root = jsonBuffer.createObject();
+StaticJsonBuffer<1000> jsonBuffer;  //subject to vhanges
+JsonObject& root = jsonBuffer.createObject();  //subject to vhanges
 
 void setup()
 {
