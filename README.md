@@ -10,8 +10,8 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 6. 5V Power Supply
 7. Resistors -  
   - 100Ω   - 5
-  - 1k     - 3
-  - 4.7k   - 2
+  - 1kΩ    - 3
+  - 4.7kΩ  - 2
 8. Capacitors -
   - 1µF    - 6
   - 1000pF - 2
