@@ -1,28 +1,40 @@
-#include "DHT.h" //install DHT Sensor Library by Adafruit
+#include "DHT.h"
+#include <SoftwareSerial.h>  // adds the ability to customize pins for serial data transmission
+#include <ArduinoJson.h>    //JSON document/ packages for efficient data transfer
+
+SoftwareSerial s(5,6);  // adds pin 5 and 6 as RX and TX respectively
+
 #define DHTPIN 2
 #define DHTTYPE DHT11
-DHT dht(DHTPIN,DHTTYPE);
-//DHT11 VCC -> Arduino 5V
-//DHT11 Data -> Arduino Digital Pin 2
-//DHT11 GND -> Arduino GND
 
-void setup() {
-  Serial.begin(9600);
+DHT dht(DHTPIN,DHTTYPE);
+
+DynamicJsonDocument doc(1000);  //creating a JSON document of size 1000 bytes
+JsonObject root = doc.to<JsonObject>();  //get a root object that points to the JSON Document
+
+void setup()
+{
+  Serial.begin(115200);
+  s.begin(115200);
   Serial.println("Humidity and Temperature ");
   dht.begin();
-  }
+}
 
-void loop() {
-delay(3000);
-float h = dht.readHumidity(); // we read Humidity of the battery using inbuilt function dht.readHumidity
-float t = dht.readTemperature(); //we read external temperature of the battery using inbuilt function dht.readHumidity
-float k = t + 273.16 ;
-Serial.print("\n Humidity\n");
-Serial.print(h);
-Serial.print("\n Temperature in Celcius \n ");
-Serial.print(t);
-Serial.println(" C");
-Serial.print("Temperature in kelvin \n ");
-Serial.print(k);
-Serial.println(" K");
+void loop() 
+{
+  delay(3000);
+  float h = dht.readHumidity();
+  root["humidity"] = h;  //sets the humidity section of the JSON document to the value of h
+  float t = dht.readTemperature();
+  root["celsius"] = t;  //sets the celsius section of the JSON document to the value of t
+  float k = t + 273.16 ;
+  root["kelvin"] = k;  //sets the kelvin section of the JSON document to the value of k
+  Serial.print("\n Humidity\n");
+  Serial.print(h);
+  Serial.print("\n Temperature in Celsius \n ");
+  Serial.print(t);
+  Serial.println(" C");
+  Serial.print("\n Temperature in kelvin \n ");
+  Serial.print(k);
+  Serial.println(" K");
 }
