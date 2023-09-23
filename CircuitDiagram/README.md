@@ -20,8 +20,8 @@
 - pin19 SCL    -    Connected to output SCL 
 - pin20 V3P3   -    Connected to output V3P3
 
-# ARDUINO PIN CONNECTIONS
+### ARDUINO PIN CONNECTIONS
 // needs expansion
 
-# ESP8266 PIN CONNECTIONS
+### ESP8266 PIN CONNECTIONS
 // needs expansion
