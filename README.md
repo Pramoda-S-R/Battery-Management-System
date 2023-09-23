@@ -1,4 +1,4 @@
-# BMS
+# Battery Management System using BQ76925
 The repository includes - Circuit diagrams, Code for the hardware used (Arduino and ESP8266 module), Features and Specifications.
 
 ## Requirements
@@ -6,9 +6,9 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 2. Arduino UNO R3
 3. NODEMCU ESP8266
 4. Blynk Account
-5. 3 - Li-Ion Batteries
+5. 3 - Li-Ion(3.7V,200 AmH) Batteries
 6. 5V Power Supply
-7. Resistors - (values placeholder)
+7. Resistors -  (values placeholder)
 8. Capacitors - (values placeholder)
 
 ## Links
