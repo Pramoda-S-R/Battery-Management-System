@@ -2,13 +2,14 @@
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN,DHTTYPE);
-
+//DHT11 VCC -> Arduino 5V
+//DHT11 Data -> Arduino Digital Pin 2
+//DHT11 GND -> Arduino GND
 
 void setup() {
   Serial.begin(9600);
   Serial.println("Humidity and Temperature ");
   dht.begin();
-
   }
 
 void loop() {
