@@ -6,7 +6,7 @@ Battery Management System (BMS) is designed to ensure the optimal performance an
    - Fail-Safe Alerts
    - IoT Integration
    - User-Friendly Interface
-   - Scalable Desig
+   - Scalable Design
  - ### Applications
    - Electric Vehicles
    - Industrial Power Backup
