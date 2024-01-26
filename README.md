@@ -3,8 +3,8 @@ The repository includes - Circuit diagrams, Code for the hardware used (Arduino 
 Battery Management System (BMS) is designed to ensure the optimal performance and safety of your energy storage solutions. This system combines precision monitoring with seamless IoT integration, providing real-time insights into crucial battery parameters.
 
 ****Team behind the project****:
-1. **Nithin Purushothama**
-2. **Pramoda S R**
+1. **Pramoda S R**
+2. **Nithin Purushothama**
  - ### Key Features 
    - Voltage, Current, and Temperature Monitoring
    - Fail-Safe Alerts
@@ -55,6 +55,3 @@ Battery Management System (BMS) is designed to ensure the optimal performance an
 - [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
 - [ESp8266](https://www.make-it.ca/nodemcu-details-specifications/)
 - [Blynk](https://blynk.io/)
-
-## License
- - Coming Soon. (hopefully)
